@@ -65,3 +65,7 @@ GET /posts?category=Technology
 ### Pagination
 
 GET /posts?page=1&limit=5
+
+## Live Deployment
+
+🚀 Live URL: https://blog-api-738r.onrender.com
