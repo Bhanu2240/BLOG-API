@@ -4,6 +4,11 @@ const Category = require("../models/Category");
 const createCategory = async (req, res) => {
   try {
     const { name } = req.body;
+    if (!name) {
+    return res.status(400).json({
+    message: "Category name is required"
+    });
+  }
 
     const category = await Category.create({
       name,
